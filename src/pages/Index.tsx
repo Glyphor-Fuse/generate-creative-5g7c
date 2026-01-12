@@ -189,7 +189,7 @@ const Index = () => {
                 </div>
                 <h3 className="text-2xl font-bold mb-4 text-white font-serif">Decrease Payroll Costs</h3>
                 <p className="text-slate-400 leading-relaxed">
-                  Get premium talent without the premium overhead. No benefits, no payroll taxes, no equipment costs—just pure, efficient support.
+                  Get premium talent without the premium overhead. No benefits, no payroll taxes, no equipment costsâjust pure, efficient support.
                 </p>
               </motion.div>
             </Reveal>
