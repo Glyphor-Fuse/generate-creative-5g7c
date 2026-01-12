@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agency Professional Services | APS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,900;1,400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
+        }
+        .text-shadow {
+            text-shadow: 0 4px 6px rgba(0,0,0,0.3);
+        }
+        .fade-in-up {
+            animation: fadeInUp 1s ease-out forwards;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        .delay-200 { animation-delay: 0.2s; }
+        .delay-400 { animation-delay: 0.4s; }
+        .delay-600 { animation-delay: 0.6s; }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-200 antialiased overflow-x-hidden">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 top-0 left-0 py-6 px-8 flex justify-between items-center mix-blend-difference text-white">
+        <div class="text-2xl font-black tracking-widest uppercase border-2 border-white px-4 py-1">
+            APS
+        </div>
+        <a href="#contact" class="hidden md:block text-sm uppercase tracking-widest hover:underline underline-offset-4">
+            Get Started
+        </a>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative h-screen min-h-[800px] flex items-center justify-center overflow-hidden">
+        <!-- Background Image with Parallax feel -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2301&auto=format&fit=crop" 
+                 alt="Modern Office Abstract" 
+                 class="w-full h-full object-cover opacity-40 scale-105">
+            <div class="absolute inset-0 bg-gradient-to-b from-slate-950/80 via-slate-950/50 to-slate-950"></div>
+        </div>
+
+        <div class="relative z-10 container mx-auto px-6 text-center md:text-left">
+            <p class="fade-in-up text-amber-500 font-medium tracking-[0.3em] uppercase mb-4">
+                Agency Professional Services
+            </p>
+            <h1 class="fade-in-up delay-200 text-6xl md:text-8xl lg:text-9xl font-black text-white leading-[0.9] tracking-tight mb-8">
+                Scale <span class="italic font-serif font-light text-slate-400">Without</span> <br> 
+                The Overhead.
+            </h1>
+            <p class="fade-in-up delay-400 max-w-2xl text-lg md:text-xl text-slate-300 font-light leading-relaxed mb-10">
+                Solution-oriented support designed for high-performance agencies.
+                Increasing productivity while drastically decreasing payroll costs.
+            </p>
+            <div class="fade-in-up delay-600">
+                <a href="#contact" class="group inline-flex items-center gap-3 bg-white text-slate-950 px-8 py-4 font-bold uppercase tracking-wider transition-all duration-300 hover:bg-amber-400 hover:scale-105">
+                    Optimize Your Agency
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 group-hover:translate-x-1 transition-transform">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- The Founder Section -->
+    <section class="py-24 md:py-32 relative bg-slate-950">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div class="relative">
+                    <div class="absolute -top-10 -left-10 w-full h-full border border-amber-500/30 rounded-none z-0 hidden md:block"></div>
+                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1000&auto=format&fit=crop" 
+                         alt="Professional Woman" 
+                         class="relative z-10 w-full h-[600px] object-cover grayscale hover:grayscale-0 transition-all duration-700 ease-in-out shadow-2xl">
+                    <div class="absolute bottom-0 left-0 bg-amber-500 text-slate-950 p-6 z-20 max-w-xs">
+                        <p class="font-serif italic text-2xl font-bold">Erica Skinner</p>
+                        <p class="text-sm font-semibold uppercase tracking-wider mt-1">Former State Farm Agent</p>
+                    </div>
+                </div>
+                
+                <div class="space-y-8">
+                    <h2 class="text-5xl md:text-6xl font-bold text-white leading-tight">
+                        Built by an Agent,<br> 
+                        <span class="text-slate-500">For Agents.</span>
+                    </h2>
+                    <div class="h-1 w-20 bg-amber-500"></div>
+                    <p class="text-lg text-slate-300 font-light leading-relaxed">
+                        We aren't just a staffing agency; we are your strategic partners. Led by Erica Skinner, a former State Farm agent, we understand the unique pressures of the industry. We know that finding reliable, P&C licensed talent is the bottleneck to your growth.
+                    </p>
+                    <p class="text-lg text-slate-300 font-light leading-relaxed">
+                        Our mission is simple: provide a fully trained, remote service team that seamlessly integrates into your agency, allowing you to focus on sales and scaling.
+                    </p>
+                    
+                    <div class="grid grid-cols-2 gap-6 pt-4">
+                        <div>
+                            <p class="text-4xl font-serif font-bold text-white">100%</p>
+                            <p class="text-sm text-slate-400 uppercase tracking-widest mt-2">P&C Licensed</p>
+                        </div>
+                        <div>
+                            <p class="text-4xl font-serif font-bold text-white">High</p>
+                            <p class="text-sm text-slate-400 uppercase tracking-widest mt-2">Efficiency Impact</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Value Proposition / Features -->
+    <section class="py-24 bg-slate-900 relative overflow-hidden">
+        <!-- Decorative blobs -->
+        <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-900/20 rounded-full blur-[100px] pointer-events-none"></div>
+        <div class="absolute bottom-0 left-0 w-[500px] h-[500px] bg-amber-900/10 rounded-full blur-[100px] pointer-events-none"></div>
+
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="text-center max-w-3xl mx-auto mb-20">
+                <h2 class="text-4xl md:text-6xl font-bold mb-6 text-white">Precision Support</h2>
+                <p class="text-slate-400 text-lg">Don't compromise on quality. Our remote teams are engineered to perform.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="glass-card p-10 hover:-translate-y-2 transition-transform duration-300 group">
+                    <div class="w-12 h-12 bg-amber-500/20 flex items-center justify-center rounded-full mb-8 group-hover:bg-amber-500 transition-colors duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-amber-500 group-hover:text-slate-900">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-white">P&C Licensed & Trained</h3>
+                    <p class="text-slate-400 leading-relaxed">
+                        Skip the onboarding headaches. Our professionals arrive licensed, trained, and ready to handle policies, claims, and service calls from day one.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="glass-card p-10 hover:-translate-y-2 transition-transform duration-300 group">
+                    <div class="w-12 h-12 bg-blue-500/20 flex items-center justify-center rounded-full mb-8 group-hover:bg-blue-500 transition-colors duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-blue-500 group-hover:text-slate-900">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18 9 11.25l4.306 4.306a11.95 11.95 0 0 1 5.814-5.518l2.74-1.22m0 0-5.94-2.281m5.94 2.28-2.28 5.941" />
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-white">Increase Productivity</h3>
+                    <p class="text-slate-400 leading-relaxed">
+                        Offload the administrative burden. Our team handles the noise so your in-house staff can focus on high-value revenue-generating activities.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="glass-card p-10 hover:-translate-y-2 transition-transform duration-300 group">
+                    <div class="w-12 h-12 bg-green-500/20 flex items-center justify-center rounded-full mb-8 group-hover:bg-green-500 transition-colors duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-green-500 group-hover:text-slate-900">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m-3-2.818.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-white">Decrease Payroll Costs</h3>
+                    <p class="text-slate-400 leading-relaxed">
+                        Get premium talent without the premium overhead. No benefits, no payroll taxes, no equipment costs—just pure, efficient support.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visual Break / Statement -->
+    <section class="py-32 relative bg-cover bg-center bg-fixed" style="background-image: url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2370&auto=format&fit=crop');">
+        <div class="absolute inset-0 bg-slate-950/90"></div>
+        <div class="container mx-auto px-6 relative z-10 text-center">
+            <p class="text-amber-500 uppercase tracking-widest font-bold mb-4">The Agency Advantage</p>
+            <h2 class="text-5xl md:text-7xl font-serif font-medium text-white max-w-4xl mx-auto leading-tight">
+                "We don't just fill seats.<br> We solve problems."
+            </h2>
+        </div>
+    </section>
+
+    <!-- Contact / CTA -->
+    <section id="contact" class="py-24 bg-white text-slate-950">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-end gap-12">
+                <div class="max-w-2xl">
+                    <h2 class="text-6xl md:text-8xl font-black mb-8 tracking-tighter text-slate-900">
+                        Ready to<br>Transform?
+                    </h2>
+                    <p class="text-xl md:text-2xl text-slate-600 font-light max-w-lg">
+                        Partner with APS today. Elevate your agency's efficiency and profitability.
+                    </p>
+                </div>
+                
+                <div class="w-full md:w-auto">
+                    <form class="space-y-6 w-full md:w-[400px]">
+                        <div>
+                            <label class="block text-sm font-bold uppercase tracking-wide mb-2 text-slate-500">Name</label>
+                            <input type="text" class="w-full bg-slate-100 border-b-2 border-slate-300 p-4 focus:outline-none focus:border-amber-500 transition-colors text-lg" placeholder="Your Name">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold uppercase tracking-wide mb-2 text-slate-500">Email</label>
+                            <input type="email" class="w-full bg-slate-100 border-b-2 border-slate-300 p-4 focus:outline-none focus:border-amber-500 transition-colors text-lg" placeholder="agency@example.com">
+                        </div>
+                        <button type="button" class="w-full bg-slate-950 text-white py-5 px-8 font-bold uppercase tracking-widest hover:bg-amber-500 hover:text-slate-950 transition-all duration-300 mt-4">
+                            Start Conversation
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="mt-32 pt-8 border-t border-slate-200 flex flex-col md:flex-row justify-between items-center text-slate-500 text-sm">
+                <p>&copy; 2024 Agency Professional Services. All rights reserved.</p>
+                <div class="flex gap-6 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-slate-900">Privacy</a>
+                    <a href="#" class="hover:text-slate-900">Terms</a>
+                    <a href="#" class="hover:text-slate-900">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<script>
+  let inspectorMode = false;
+  let hoveredElement = null;
+  let selectedElement = null;
+  
+  window.addEventListener('message', (event) => {
+    if (event.data?.type === 'SET_INSPECTOR_MODE') {
+      inspectorMode = event.data.enabled;
+      document.body.style.cursor = inspectorMode ? 'crosshair' : 'default';
+    }
+    
+    if (event.data?.type === 'LOCAL_UPDATE' && selectedElement) {
+      const update = event.data.update;
+      
+      if (update.text !== undefined) {
+        selectedElement.innerText = update.text;
+      }
+      
+      if (update.styles) {
+        Object.entries(update.styles).forEach(([prop, value]) => {
+          selectedElement.style[prop] = value;
+        });
+      }
+    }
+  });
+  
+  document.addEventListener('mouseover', (e) => {
+    if (!inspectorMode) return;
+    if (hoveredElement && hoveredElement !== selectedElement) {
+      hoveredElement.style.outline = '';
+    }
+    hoveredElement = e.target;
+    if (hoveredElement !== selectedElement) {
+      hoveredElement.style.outline = '2px solid #06b6d4';
+    }
+  });
+  
+  document.addEventListener('mouseout', (e) => {
+    if (!inspectorMode || !hoveredElement) return;
+    if (hoveredElement !== selectedElement) {
+      hoveredElement.style.outline = '';
+    }
+  });
+  
+  document.addEventListener('click', (e) => {
+    if (!inspectorMode) return;
+    e.preventDefault();
+    e.stopPropagation();
+    
+    if (selectedElement) {
+      selectedElement.style.outline = '';
+    }
+    
+    const el = e.target;
+    selectedElement = el;
+    el.style.outline = '3px solid #06b6d4';
+    
+    const rect = el.getBoundingClientRect();
+    const styles = window.getComputedStyle(el);
+    
+    window.parent.postMessage({
+      type: 'ELEMENT_SELECTED',
+      element: {
+        tagName: el.tagName.toLowerCase(),
+        text: el.innerText?.substring(0, 500) || '',
+        className: el.className || '',
+        styles: {
+          color: styles.color,
+          backgroundColor: styles.backgroundColor,
+          fontSize: styles.fontSize,
+          fontWeight: styles.fontWeight,
+          padding: styles.padding,
+          margin: styles.margin,
+        },
+        rect: {
+          top: rect.top,
+          left: rect.left,
+          width: rect.width,
+          height: rect.height,
+        },
+        selector: el.id ? '#' + el.id : (el.className ? '.' + el.className.split(' ')[0] : el.tagName.toLowerCase())
+      }
+    }, '*');
+  }, true);
+</script>
+</body>
+</html>
