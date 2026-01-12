@@ -80,9 +80,9 @@ const Index = () => {
               <div className="absolute -top-10 -left-10 w-full h-full border border-amber-500/30 rounded-none z-0 hidden md:block"></div>
               <Reveal width="100%">
                 <img 
-                  src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1000&auto=format&fit=crop" 
+                  src="https://pub-92da557f6b314ad398066420640751f5.r2.dev/ai-images/506357178_10228632669511833_6549499111356034138_n.jpg" 
                   alt="Professional Woman" 
-                  className="relative z-10 w-full h-[600px] object-cover grayscale hover:grayscale-0 transition-all duration-700 ease-in-out shadow-2xl"
+                  className="relative z-10 w-full h-[600px] object-cover grayscale hover:grayscale-0 transition-all duration-700 ease-in-out shadow-2xl bg-[#e2e8f0]"
                 />
               </Reveal>
               <div className="absolute bottom-0 left-0 bg-amber-500 text-slate-950 p-6 z-20 max-w-xs">
